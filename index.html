@@ -177,8 +177,13 @@
       font-weight: 800;
       letter-spacing: -0.02em;
       color: var(--white);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
     }
-    .logo span { color: var(--teal); }
+    .logo img { height: 36px; width: auto; flex-shrink: 0; display: block; }
+    .logo-starlit { color: var(--teal); }
+    .logo-electrical { color: var(--white); }
     nav { display: flex; align-items: center; gap: 2rem; }
     nav a {
       font-size: 0.9rem;
@@ -1073,7 +1078,8 @@
 <header id="header" role="banner">
   <div class="header-inner">
     <a href="#hero" class="logo" aria-label="Starlit Electrical home">
-      <span>★</span> Starlit Electrical
+      <img src="logo.png" alt="Starlit Electrical logo" />
+      <span class="logo-starlit">Starlit</span><span class="logo-electrical">&nbsp;Electrical</span>
     </a>
     <nav class="nav-links" aria-label="Main navigation">
       <a href="#services">Services</a>
@@ -1645,7 +1651,8 @@
       <!-- Brand column -->
       <div class="footer-brand">
         <a href="#hero" class="logo">
-          <span style="color:var(--teal)">★</span> Starlit Electrical
+          <img src="logo.png" alt="Starlit Electrical logo" style="height:28px;" />
+          <span class="logo-starlit">Starlit</span><span class="logo-electrical">&nbsp;Electrical</span>
         </a>
         <p class="footer-desc">
           Birmingham's trusted NICEIC certified electricians. Domestic, commercial and industrial electrical services across the Midlands.
